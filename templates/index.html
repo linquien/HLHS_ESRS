@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-
     <title>測試畫面</title>
     <link rel="stylesheet" href="./CSS/login.css" type="text/css">
   </head>
@@ -17,44 +16,48 @@
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">花中自習系統</a>
         <!-- 選單 -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menulist" aria-controls="menulist" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasBottom">
           <span class="navbar-toggler-icon"></span>
         </button>
       </nav>
 
+      <!-- 選單 -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul class="list-group">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A fourth item</li>
+              <li class="list-group-item">And a fifth one</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
       <!-- 內容 -->
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 col-lg-2 p-0">
-            <div class="collapse navbar-collapse bg-black" id="menulist">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">目前畫面</a>
-                <a class="nav-item nav-link" href="#">11111</a>
-                <a class="nav-item nav-link" href="#">22222</a>
-                <a class="nav-item-end nav-link" href="#">33333</a>
-            </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-10">
-            <div class="wrapper fadeInDown">
-              <div id="formContent">
-                <!-- Tabs Titles -->
-                <h2 class="active"> Sign In </h2>
-                <h2 class="inactive underlineHover">Sign Up </h2>
-                <!-- Login Form -->
-                <form>
-                  <input type="text" id="user_id" class="fadeIn second" name="id" placeholder="login">
-                  <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
-                  <input type="submit" class="fadeIn fourth" value="Log In">
-                </form>
+        <div class="wrapper fadeInDown">
+          <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active"> Sign In </h2>
+            <h2 class="inactive underlineHover">Sign Up </h2>
+            <!-- Login Form -->
+            <form>
+              <input type="text" id="user_id" class="fadeIn second" name="id" placeholder="login">
+              <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
+              <input type="submit" class="fadeIn fourth" value="Log In">
+            </form>
             
-                <!-- Remind Passowrd -->
-                <div id="formFooter">
-                  <a class="underlineHover" href="#">Forgot Password?</a>
-                </div>
-            
-              </div>
-            </div>
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+              <a class="underlineHover" href="#">Forgot Password?</a>
             </div>
           </div>
         </div>
