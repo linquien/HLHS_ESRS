@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+   }
+.header {
+    
+    background-color: lightskyblue;
+    margin: 0px;
+    width: 100%;
+	height: 64px;
+    font-size: 24px;
+	position: fixed;
+	top: 0;
+}
+.list{
+    position: fixed;
+	top: 64px;
+    width:256px;
+    height: 100%;
+    background: gray;
+    color: white ;
+}
+.main{
+    margin-top: 64px;
+    margin-left: 256px;
+    padding: 16px;
+    
+}
+.news{
+    display: flex;
+    width: 1024px;
+    height: 256px;
+}
