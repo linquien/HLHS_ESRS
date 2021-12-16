@@ -11,6 +11,7 @@ body {
 	position: fixed;
 	top: 0;
 }
+
 .list{
     position: fixed;
 	top: 64px;
@@ -29,4 +30,9 @@ body {
     display: flex;
     width: 1024px;
     height: 256px;
+}
+
+.navbar {
+    padding-left: 18px;
+    padding-right: 18px;
 }
