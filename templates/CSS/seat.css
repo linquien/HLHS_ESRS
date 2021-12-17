@@ -1,13 +1,19 @@
-td{
-    width:  80px;
-    height: 80px;
-    border: 1px solid ;
-}
-
 td.ac{
     background-color: green;
 }
 
 td.mi{
     background-color:red;
+}
+
+.big-table td {
+    width: 140px;
+    height: 90px;
+}
+.unsit{
+    width: 20px;
+    border: 0px;
+}
+.sit{
+    border: 1px solid;
 }
