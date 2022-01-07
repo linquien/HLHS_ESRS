@@ -1,0 +1,21 @@
+td {
+    width: 140px;
+    height: 90px;
+    border: 1px solid;
+  }
+  .unsit{
+    width: 20px;
+    border: 0px;
+  }
+  .road{
+    height: 10px;
+  }
+  .sit{
+    background-color: #64ee14;
+  }
+  .voc{
+    background-color: #ee6b14;
+  }
+  .idk{
+    background-color: #f13857;
+  }
