@@ -19,3 +19,7 @@ td {
   .idk{
     background-color: #f13857;
   }
+
+  td label input[type="checkbox"]{
+    display:none;
+  }
