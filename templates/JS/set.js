@@ -1,6 +1,6 @@
-var radios = document.querySelectorAll('input[type=checkbox]');
-function changeHandler(event) {
-    if ( this.value === '0' ) {
+var Checkboxes = document.querySelectorAll('input[type=checkbox]');
+function changeHandler() {
+    /*if ( this.value === '0' ) {
         var chang = this.parentElement.parentElement;
         chang.className = 'sit';
     } else if ( this.value === '1' ) {
@@ -10,14 +10,21 @@ function changeHandler(event) {
     else if ( this.value === '2' ) {
         var chang = this.parentElement.parentElement;
         chang.className = 'idk';
-     }
+     } */
     // for checkbox
-    else if ( this.value == 'on' ) {
+    if ( this.checked) {
         var chang = this.parentElement.parentElement;
-        chang.className = 'idk';
-     }   
+        chang.className = 'NULLs';
+     }
+    else
+    {
+        var chang = this.parentElement.parentElement;
+        chang.className = 'sit';
+    }
  }
  
- Array.prototype.forEach.call(radios, function(radio) {
-    radio.addEventListener('change', changeHandler);
+ Array.prototype.forEach.call(Checkboxes, function(checkbox){
+    checkbox.addEventListener('change', changeHandler);
  });
+
+ 
