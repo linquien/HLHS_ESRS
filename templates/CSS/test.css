@@ -1,3 +1,10 @@
 input[type="checkbox"] {
-    display: none;
+    /*display: none;
+    */
+    display:ruby-base-container;
+}
+
+.a{
+    width: 140px;
+    height: 90px;
 }
