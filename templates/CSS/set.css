@@ -1,8 +1,8 @@
-td {
+/* td {
     width: 140px;
     height: 90px;
     border: 1px solid;
-  }
+  } */
   .unsit{
     width: 20px;
     border: 0px;
@@ -10,7 +10,7 @@ td {
   .road{
     height: 10px;
   }
-  .sit{
+  /* .sit{
     background-color: #64ee14;
   }
   .voc{
@@ -18,8 +18,25 @@ td {
   }
   .NULL{
     background-color: #f13857;
+  } */
+
+  td label span{
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    display: inline-block;
+    border: 1px solid;
+    background-color:#64ee14 ;
+    overflow:hidden;
+    user-select: none;
+    cursor: pointer;
   }
 
   td label input[type="checkbox"]{
     display:none;
+  }
+
+  td label input[type="checkbox"]:checked ~span{
+    background-color: #f13857;
   }
